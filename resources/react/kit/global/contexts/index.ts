@@ -1,1 +1,1 @@
-export {useAppState, AppStateProvider} from './AppStateProvider';
+export { useAppState, AppStateProvider } from './AppStateProvider';

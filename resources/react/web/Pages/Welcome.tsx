@@ -1,12 +1,12 @@
-import { ReactNode } from "react";
-import { Web } from "../Layouts/Web";
+import { Web } from '../Layouts/Web';
+import { ReactNode } from 'react';
 
 export const Welcome = () => (
+  <div>
     <div>
-        <div>
             Welcome
-        </div>
     </div>
+  </div>
 );
 
 Welcome.layout = (page: ReactNode) => <Web>{page}</Web>;

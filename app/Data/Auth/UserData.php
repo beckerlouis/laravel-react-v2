@@ -10,13 +10,12 @@ use Spatie\TypeScriptTransformer\Attributes\TypeScript;
 class UserData extends Data
 {
     public function __construct(
-        public int      $id,
-        public string   $name,
-        public string   $email,
+        public int $id,
+        public string $name,
+        public string $email,
         public DateTime $email_verified_at,
         public DateTime $created_at,
         public DateTime $updated_at,
-    )
-    {
+    ) {
     }
 }
