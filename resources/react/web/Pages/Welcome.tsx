@@ -1,11 +1,9 @@
-import { Web } from '../Layouts/Web';
+import { Web } from '@web/Layouts/Web';
 import { ReactNode } from 'react';
 
 export const Welcome = () => (
   <div>
-    <div>
-            Welcome
-    </div>
+    <div>Welcome</div>
   </div>
 );
 

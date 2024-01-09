@@ -13,11 +13,14 @@
         "types": ["vite/client"],
         "noImplicitAny": false,
         "paths": {
-            "@types": [
-                "./resources/react/types/"
-            ],
             "@kit/*": [
                 "./resources/react/kit/*"
+            ],
+            "@web/*": [
+                "./resources/react/web/*"
+            ],
+            "@types": [
+                "./resources/react/types/"
             ],
             "ziggy-js": [
                 "./vendor/tightenco/ziggy"

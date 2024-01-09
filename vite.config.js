@@ -14,5 +14,10 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
   ],
-  resolve: { alias: { '@kit': path.resolve(__dirname, './resources/react/kit') }},
+  resolve: {
+    alias: {
+      '@kit': path.resolve(__dirname, './resources/react/kit'),
+      '@web': path.resolve(__dirname, './resources/react/web'),
+    },
+  },
 });

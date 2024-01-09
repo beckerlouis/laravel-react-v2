@@ -9,9 +9,9 @@ export const Web = ({ children }: PropsWithChildren) => (
   <Flowbite theme={{ theme: customTheme }}>
     <Meta />
     <AppStateProvider>
-      <header>
-      </header>
+      <header></header>
       <main>{children}</main>
+      <footer></footer>
     </AppStateProvider>
   </Flowbite>
 );
