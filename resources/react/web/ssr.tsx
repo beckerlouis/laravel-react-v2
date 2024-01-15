@@ -11,6 +11,7 @@ createServer((page) => createInertiaApp({
   title: (title) => `${title} - ${import.meta.env.VITE_APP_NAME || 'Laravel'}`,
   resolve: (name) => resolvePageComponent(`./Pages/${name}.tsx`, import.meta.glob('./Pages/**/*.tsx')),
   setup: ({ App, props }) => {
+            // @ts-ignore
             global.route<RouteName> = (name, params, absolute) => route(name, params, absolute, {
               // @ts-expect-error
               ...page.props.ziggy,

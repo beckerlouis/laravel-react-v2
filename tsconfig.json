@@ -1,39 +1,44 @@
 {
-    "compilerOptions": {
-        "allowJs": true,
-        "module": "ESNext",
-        "moduleResolution": "bundler",
-        "jsx": "react-jsx",
-        "strict": true,
-        "isolatedModules": true,
-        "target": "ESNext",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "noEmit": true,
-        "types": ["vite/client"],
-        "noImplicitAny": false,
-        "paths": {
-            "@kit/*": [
-                "./resources/react/kit/*"
-            ],
-            "@web/*": [
-                "./resources/react/web/*"
-            ],
-            "@types": [
-                "./resources/react/types/"
-            ],
-            "ziggy-js": [
-                "./vendor/tightenco/ziggy"
-            ]
-        }
-    },
-    "include": [
-        "**/*.ts",
-        "**/*.tsx"
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "isolatedModules": true,
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "types": [
+      "vite/client"
     ],
-    "exclude": [
-        "node_modules",
-        "public",
-        "vendor"
-    ]
+    "noImplicitAny": false,
+    "paths": {
+      "@kit/*": [
+        "./resources/react/kit/*"
+      ],
+      "@gen": [
+        "./resources/react/types/gen"
+      ],
+      "@types": [
+        "./resources/react/types/"
+      ],
+      "@web/*": [
+        "./resources/react/web/*"
+      ],
+      "ziggy-js": [
+        "./vendor/tightenco/ziggy"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "public",
+    "vendor"
+  ]
 }
