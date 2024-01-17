@@ -1,9 +1,11 @@
+// @ts-ignore
+import { InertiaFormProps } from '@inertiajs/react/types/useForm';
 import { createContext, Dispatch, HTMLAttributes, ReactNode, useContext } from 'react';
 
 interface FormStateInterface {
   data: any;
-  setData: Dispatch<any>;
   errors?: { [name: string]: string };
+  setData: InertiaFormProps['setData'];
 }
 
 const FormStateContext = createContext<FormStateInterface | undefined>(undefined);
@@ -28,8 +30,8 @@ export type InputFormProps<
 
 export type FormProps = HTMLAttributes<HTMLFormElement> &
   FormStateInterface & {
-    children: ReactNode;
-  };
+  children?: ReactNode | undefined;
+};
 
 export const Form = ({ children, data, setData, errors, ...rest }: FormProps) => (
   <FormStateContext.Provider
@@ -42,5 +44,3 @@ export const Form = ({ children, data, setData, errors, ...rest }: FormProps) =>
     <form {...rest}>{children}</form>
   </FormStateContext.Provider>
 );
-
-export default Form;
