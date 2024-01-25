@@ -1,10 +1,10 @@
-// @ts-ignore
 import { InertiaFormProps } from '@inertiajs/react/types/useForm';
 import { createContext, Dispatch, HTMLAttributes, ReactNode, useContext } from 'react';
 
 interface FormStateInterface {
   data: any;
   errors?: { [name: string]: string };
+  // @ts-ignore
   setData: InertiaFormProps['setData'];
 }
 
