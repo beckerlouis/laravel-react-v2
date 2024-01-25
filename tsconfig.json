@@ -1,35 +1,44 @@
 {
   "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "./",
     "allowJs": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "jsx": "react-jsx",
+    "skipLibCheck": true,
     "strict": true,
-    "isolatedModules": true,
-    "target": "ESNext",
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "noImplicitAny": false,
     "types": [
       "vite/client"
     ],
-    "noImplicitAny": false,
     "paths": {
-      "@kit/*": [
-        "./resources/react/kit/*"
-      ],
-      "@gen": [
-        "./resources/react/types/gen"
+      "@gen/*": [
+        "./resources/react/gen/*"
       ],
       "@types": [
         "./resources/react/types/"
       ],
+      "@kit/*": [
+        "./resources/react/kit/*"
+      ],
+      "@vendor/*": [
+        "./vendor/*"
+      ],
       "@web/*": [
         "./resources/react/web/*"
       ],
-      "ziggy-js": [
-        "./vendor/tightenco/ziggy"
-      ]
     }
   },
   "include": [
