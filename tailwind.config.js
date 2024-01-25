@@ -10,7 +10,7 @@ export default {
     './resources/react/**/*.tsx',
   ],
 
-  theme: { extend: { fontFamily: { sans: [ 'Figtree', ...defaultTheme.fontFamily.sans ]}}},
+  theme: { extend: { fontFamily: { sans: [ 'Roboto', ...defaultTheme.fontFamily.sans ]}}},
 
   plugins: [ require('flowbite/plugin') ],
 };
