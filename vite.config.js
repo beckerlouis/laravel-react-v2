@@ -7,8 +7,8 @@ import path from 'path';
 export default defineConfig({
   plugins: [
     laravel({
-      input: [ 'resources/react/web/web.tsx' ],
-      ssr: [ 'resources/react/web/ssr.tsx' ],
+      input: [ 'resources/react/web/web.tsx', 'resources/react/app/app.tsx', 'resources/react/admin/admin.tsx' ],
+      ssr: [ 'resources/react/web/ssr.tsx', 'resources/react/app/ssr.tsx', 'resources/react/admin/ssr.tsx' ],
       refresh: true,
     }),
     react(),
@@ -25,6 +25,8 @@ export default defineConfig({
       '@kit': path.resolve(__dirname, './resources/react/kit'),
       '@vendor': path.resolve(__dirname, './vendor'),
       '@web': path.resolve(__dirname, './resources/react/web'),
+      '@app': path.resolve(__dirname, './resources/react/app'),
+      '@admin': path.resolve(__dirname, './resources/react/admin'),
     },
   },
   build: { commonjsOptions: { transformMixedEsModules: true }},

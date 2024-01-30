@@ -39,6 +39,12 @@
       "@web/*": [
         "./resources/react/web/*"
       ],
+      "@app/*": [
+        "./resources/react/app/*"
+      ],
+      "@admin/*": [
+        "./resources/react/admin/*"
+      ]
     }
   },
   "include": [

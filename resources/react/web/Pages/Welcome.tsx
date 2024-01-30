@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 
 export const Welcome = () => (
   <div>
-    <div>Welcome</div>
+    <div>Web: Welcome</div>
   </div>
 );
 

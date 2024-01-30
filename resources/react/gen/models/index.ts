@@ -1,3 +1,17 @@
+export type AppData = {
+  auth: AuthData;
+  search: string | null;
+  flash: FlashData;
+  ziggy: Array<any>;
+  appName: string;
+};
+export type AuthData = {
+  user: UserData | null;
+};
+export type FlashData = {
+  success: string | null;
+  error: string | null;
+};
 export type PageData = {
   seo: SeoPageData | null;
 };
